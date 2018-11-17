@@ -1,6 +1,7 @@
 name: irss
 channels:
   - conda-forge
+  - default
   - chogan
 dependencies:
   - python=3.6
@@ -13,6 +14,10 @@ dependencies:
   - poliastro=0.11.0
   - h5py
   - mpb
-  - pymeep
+  - pymeep=1.6.0
   - tensorflow-gpu
   - keras
+  - pyqt
+  - jsoncpp=0.10.6
+  - vtk
+  - mayavi
