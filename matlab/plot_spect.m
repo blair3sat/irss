@@ -12,7 +12,7 @@ ch = chirp(ts, START_F, REP_T, STOP_F)';
 % Load noise from recording
 % [fn, pn] = uigetfile('*.iq');
 % fid = fopen(fullfile(pn, fn));
-fid = fopen('./data/own/IQREC-02-03-19-13h38m31s479.iq');
+fid = fopen('../data/own/IQREC-02-03-19-13h38m31s479.iq');
 s = fread(fid, SAMP_RATE * ELAPSED_TIME * 2, 'int16');
 fclose(fid);
 s_c = complex(s(1:2:end),s(2:2:end));
